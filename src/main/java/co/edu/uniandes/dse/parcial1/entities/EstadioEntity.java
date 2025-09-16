@@ -12,4 +12,7 @@ public class EstadioEntity extends BaseEntity {
     private String nombreciudad;
     private Integer aforo;
 
+    @PodamExclude
+    @OneToMany(mappedBy = "concierto", cascade = CascadeType.PERSIST, orphanRemoval = true)
+    private List<ConciertoEntity> conciertos = new ArrayList<>();
 }
