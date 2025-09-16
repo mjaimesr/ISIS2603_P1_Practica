@@ -9,4 +9,8 @@ public class ConciertoEntity extends BaseEntity {
 
     private String nombre;
     private Long presupuesto;
+    private String nombreartista;
+    private Date fechaconcierto;
+    private Integer capacidad;
+
 }
